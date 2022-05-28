@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.bingautosuggest.BingAutoSuggest" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Bing Auto Suggest</name>
+    <description>Bing Auto Suggest</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Data source">
+                <property key="searchString" type="attribute">
+                    <caption>Search</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String" />
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Data output">
+                <property key="formattedResultString" type="attribute" required="false">
+                    <caption>Formatted Result</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String" />
+                    </attributeTypes>
+                </property>
+                <property key="latDecimal" type="attribute" required="false">
+                    <caption>Latitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                    </attributeTypes>
+                </property>
+                <property key="longDecimal" type="attribute" required="false">
+                    <caption>Longitude</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                    </attributeTypes>
+                </property>
+                <property key="jsonResultString" type="attribute" required="false">
+                    <caption>JSON Result</caption>
+                    <description />
+                    <attributeTypes>
+                        <attributeType name="String" />
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <propertyGroup caption="Events">
+                <property key="onSelectAction" type="action" required="false">
+                    <caption>On select</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Settings">
+            <propertyGroup caption="API">
+                <property key="apiKey" type="expression">
+                    <caption>Bing Maps API Key</caption>
+                    <description />
+                    <returnType type="String" />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="AutoSuggest">
+                <property key="resultsCount" type="expression" required="false">
+                    <caption>Max Results Count</caption>
+                    <description />
+                    <returnType type="Integer" />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Widget">
+                <property key="verboseLog" type="boolean" defaultValue="false">
+                    <caption>Log Verbose</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
